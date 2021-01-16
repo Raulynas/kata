@@ -6,10 +6,17 @@
 
 
 function noBoringZeros(n) {
+    if ( n === 0) {
+        return 0;
+    }
     let newNumber = n;
-    while (newNumber / )
+    while (newNumber %10 === 0) {
+        newNumber = newNumber / 10;
+    }
+    return newNumber
+}
 
-console.log(noBoringZeros(-1050));
+console.log(noBoringZeros(10));
 
 
 
